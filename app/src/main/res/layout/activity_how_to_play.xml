@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.widget.RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    app:layout_behavior="@string/appbar_scrolling_view_behavior"
+    tools:context="com.game.lightsout.HowToPlay">
+
+    <TextView
+        android:id="@+id/titleText"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:layout_marginBottom="50dp"
+        android:fontFamily="sans-serif-condensed-medium"
+        android:gravity="center"
+        android:text="@string/how_to_play"
+        android:textColor="@color/colorAccent"
+        android:textSize="75sp" />
+
+    <TextView
+        android:id="@+id/how_to_play_description"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/titleText"
+        android:text="@string/how_to_play_description"
+        android:textSize="40sp"
+        android:textColor="#757575"
+        android:gravity="center_horizontal" />
+
+    <Button
+        android:id="@+id/letsPlayButton"
+        android:layout_width="match_parent"
+        android:layout_height="75dp"
+        android:layout_below="@id/how_to_play_description"
+        android:layout_marginTop="38dp"
+        android:background="@color/colorAccent"
+        android:text="@string/lets_play"
+        android:textColor="@color/white"
+        android:textSize="36sp" />
+
+</android.widget.RelativeLayout>
